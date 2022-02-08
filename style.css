@@ -1,0 +1,114 @@
+.popWindow {
+    display: none;
+    max-width: 720px;
+    top: 50%;
+    left: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #BFBFBF;
+}
+
+.popWindow h2 {
+    color: black;
+    font-size: 18px;
+    z-index: 10;
+    position: relative;
+}
+
+.close-btn {
+    float: right;
+    font-size: 40px;
+    line-height: 20px;
+    cursor: pointer;
+    color: red;
+    padding: 10px;
+}
+
+.popup-form {
+    max-width: 300px;
+}
+
+.popup-form input,
+.popup-form textarea {
+    border: 1px solid #3d3d3d;
+    width: 100%;
+    font-size: 16px;
+    line-height: 32px;
+    padding: 5px 20px;
+    margin-bottom: 20px;
+    outline: none;
+    background: #A6A6A4;
+    color: black;
+    border-radius: 4px;
+}
+
+.popup-submit {
+    color: #161613;
+    background-color: #ff00ff;
+    padding: 10px 50px;
+    text-align: center;
+    font-size: 13px;
+    border: 1px solid #ff00ff;
+    box-shadow: none;
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+}
+
+.popup-form .popup-submit:hover {
+    background-color: #7b2d8f;
+}
+
+.popup-form label {
+    color: black;
+    position: relative;
+    left: 10px;
+    bottom: 55px;
+}
+
+.popup-form input:focus+.movable {
+    left: -62px;
+}
+
+.popup-form textarea:focus+.movable {
+    left: -62px;
+}
+
+.popup-form textarea:not(:placeholder-shown)+.movable {
+    left: -62px;
+}
+
+.popup-form input:not(:placeholder-shown)+.movable {
+    left: -62px;
+}
+
+.thank-you-window {
+    display: none;
+    max-width: 720px;
+    width: 500px;
+    height: 500px;
+    margin: 150px auto;
+    background-color: #A6A6A4;
+}
+
+.thank-you-window .thank-you-message {
+    color: #fff;
+    font-size: 35px;
+}
+
+@media (max-width:500px) {
+    .popup-form input:focus+.movable {
+        display: none;
+    }
+    .popup-form textarea:focus+.movable {
+        display: none;
+    }
+    .thank-you-window {
+        width: inherit;
+        height: 250px;
+        font-size: 20px;
+    }
+}
